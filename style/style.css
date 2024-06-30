@@ -1,0 +1,320 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: normal 0.80em 'Trebuchet MS', Arial, sans-serif;
+  background: #FFF;
+  color: #555;
+  margin: 0;
+}
+
+p {
+  padding: 0 0 20px 0;
+  line-height: 1.7em;
+}
+
+img {
+  border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #362C20;
+  letter-spacing: 0em;
+  padding: 0 0 5px 0;
+}
+
+h1, h2, h3 {
+  font: normal 170% 'Century Gothic', Arial;
+  margin: 0 0 15px 0;
+  padding: 15px 0 5px 0;
+  color: #000;
+}
+
+h2 {
+  font-size: 160%;
+  padding: 9px 0 5px 0;
+  color: #B48A7C;
+}
+
+h3 {
+  font-size: 140%;
+  padding: 5px 0 0 0;
+}
+
+h4, h6 {
+  color: #B48A7C;
+  padding: 0 0 5px 0;
+  font: normal 110% Arial;
+  text-transform: uppercase;
+}
+
+h5, h6 {
+  color: #888;
+  font: normal 95% Arial;
+  letter-spacing: normal;
+  padding: 0 0 15px 0;
+}
+
+a, a:hover {
+  outline: none;
+  text-decoration: underline;
+  color: #B48A7C;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+blockquote {
+  margin: 20px 0;
+  padding: 10px 20px 0 20px;
+  border: 1px solid #E5E5DB;
+  background: #FFF;
+}
+
+ul {
+  margin: 2px 0 22px 17px;
+}
+
+ul li {
+  list-style-type: circle;
+  margin: 0 0 6px 0;
+  padding: 0 0 4px 5px;
+  line-height: 1.5em;
+}
+
+ol {
+  margin: 8px 0 22px 20px;
+}
+
+ol li {
+  margin: 0 0 11px 0;
+}
+
+.left {
+  float: left;
+  width: auto;
+  margin-right: 10px;
+}
+
+.right {
+  float: right;
+  width: auto;
+  margin-left: 10px;
+}
+
+.center {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+}
+
+#main, #logo, #menubar, #site_content, #footer {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+#header {
+  background: #000;
+  border-bottom: 1px solid #3d3d3d;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#logo {
+  width: 100%;
+  background: #1d1d1d;
+  padding: 10px 0;
+  text-align: center;
+}
+
+#logo #logo_text h1, #logo #logo_text h2 {
+  margin: 0;
+}
+
+#logo_text h1 a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+#logo_text h1 a:hover {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+#logo_text h1 a .logo_colour {
+  color: #5E4238;
+}
+
+#logo_text h2 {
+  color: #B48A7C;
+}
+
+#menubar {
+  width: 100%;
+  background: #2D2D2D;
+  overflow: hidden;
+}
+
+ul#menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+ul#menu li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+ul#menu li a {
+  font: normal 100% 'Trebuchet MS', sans-serif;
+  display: block;
+  padding: 10px 20px;
+  color: #FFF;
+  text-decoration: none;
+  background: #5E4238;
+}
+
+ul#menu li.selected a {
+  background: #B48A7C;
+}
+
+ul#menu li a:hover {
+  background: #B48A7C;
+}
+
+#site_content {
+  width: 90%;
+  margin: 20px auto 0 auto;
+  padding: 0 0 10px 0;
+  text-align: center;
+}
+
+#banner {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+#content {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 5%;
+}
+
+#footer {
+  width: 100%;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 100%;
+  height: auto;
+  padding: 20px 0;
+  text-align: center;
+  background: #000;
+  color: #FFF;
+}
+
+#footer p {
+  line-height: 1.7em;
+}
+
+#footer a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: #B48A7C;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+  #logo_text h1, #logo_text h2 {
+    font-size: 1.5em;
+  }
+
+  #menubar ul {
+    padding: 0;
+  }
+
+  #menubar ul li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  #banner {
+    width: 100%;
+    height: auto;
+    border: none;
+  }
+}
+
+@media (max-width: 500px) {
+  #header, #logo, #menubar, #site_content, #footer {
+    width: 100%;
+    padding: 0;
+  }
+
+  #content {
+    padding: 0 2%;
+  }
+}
+
+.project_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project {
+  width: calc(25% - 20px); /* Adjust based on desired layout */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+
+.project h3 {
+  margin-top: 10px;
+}
+
+@media (max-width: 1000px) {
+  .project {
+    width: calc(33.33% - 20px); /* Show three items per row */
+  }
+}
+
+@media (max-width: 700px) {
+  .project {
+    width: calc(50% - 20px); /* Show two items per row */
+  }
+}
+
+@media (max-width: 500px) {
+  .project {
+    width: 100%; /* Show one item per row */
+  }
+}
